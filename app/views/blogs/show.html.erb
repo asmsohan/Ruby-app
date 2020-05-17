@@ -9,7 +9,7 @@
 <p>
   <%= link_to 'Edit', edit_blog_path(@blog) %>
   &nbsp;
-  <%= link_to 'Delete', blogs_path(@blog) %>
+  <%= link_to 'Back', blogs_path(@blog) %>
   &nbsp;
-  <%= link_to 'Back', blog_path(@blog.id), method: :delete, data:{ confirm: "Are you sure, you want to delete?"}  %>
+  <%= link_to 'Delete', blog_path(@blog.id), method: :delete, data:{ confirm: "Are you sure, you want to delete?"}  %>
 </p>
